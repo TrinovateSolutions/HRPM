@@ -1,0 +1,88 @@
+/* Page background */
+.login-page {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #0b1120; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Logo styling */
+.logo {
+    /* width: 60%; */
+    margin-bottom: 5px;
+}
+
+/* Login container */
+.login-container {
+    background-color: #1e293b;
+    /* dark slate */
+    border: 2px solid #d4af37;
+    /* gold */
+    border-radius: 16px;
+    padding: 0 40px 20px 40px;
+    width: 350px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* Heading */
+.main-heading {
+    color: #917d49;
+    /* gold */
+    margin-bottom: 30px;
+}
+
+/* Form */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Button */
+.form-group button {
+    justify-content: center;
+    width: 95%;
+    padding: 10px;
+    background-color: #917d49;
+    /* gold */
+    color: #0b1120;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #b8902c;
+    /* darker gold */
+}
+
+.signup_link {
+    color: white;
+    margin-top: -5px;
+    font-size: small;
+    
+}
+
+.signup_container {
+    display: flex;
+    justify-content: flex-end;
+}
