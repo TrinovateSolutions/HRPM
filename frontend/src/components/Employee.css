@@ -4,38 +4,71 @@
 
 .employee-header {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
+  justify-content: space-around; /* space between search & add button */
+  align-items: center; /* vertically align them */
+  gap: 150px; /* optional: space between elements if they wrap */
+}
+.plus {
+  font-weight: bolder;
+  font-size: 1.2em; /* Slightly larger than text */
+  margin-right: 5px; /* Space between + and text */
 }
 
-.employee-header input {
-  padding: 8px;
-  width: 250px;
+.employee-search {
+  display: flex;
+  gap: 10px; /* space between input and search button */
 }
 
-.employee-header button {
+.employee-search input {
+  width: 400px;
   padding: 8px 12px;
-  background-color: #007bff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.employee-search button {
+  padding: 8px 16px;
   border: none;
+  background-color: #1e293b;
   color: white;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.employee-header button:hover {
-  background-color: #0056b3;
+.employee-add button {
+  padding: 8px 16px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
 }
+
 
 .employee-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: collapse; /* removes double borders */
+  margin-top: 80px;
+  font-size: 14px;
 }
 
 .employee-table th,
 .employee-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
+  border: 1px solid #ccc; /* light gray border */
+  padding: 10px 12px;
+  text-align: center;
 }
 
 .employee-table th {
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; /* light header background */
+  font-weight: bold;
+}
+
+.employee-table tr:nth-child(even) {
+  background-color: #fafafa; /* zebra striping */
+}
+
+.employee-table tr:hover {
+  background-color: #f1f7ff; /* light blue hover */
 }

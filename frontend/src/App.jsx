@@ -5,17 +5,16 @@ import './App.css'
 import Login from './components/Login'
 import Signup from './components/Signup'
 import Layout from './components/Layout'
-import Employee from './components/Employee'
-
+import Employee from './components/Employee';
+import AddEmployee from './components/AddEmployee';
 function App() {
 
   return (
     <>
       {/* <Login /> */}
       {/* <Signup /> */}
-      <Layout>
-
-      </Layout>
+      {/* <Employee/> */}
+      <AddEmployee/>
     </>
   )
 }
