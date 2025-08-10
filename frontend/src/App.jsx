@@ -4,7 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Login from './components/Login'
 import Signup from './components/Signup'
-import Layout from './components/Layout';
+import Layout from './components/Layout'
+import Employee from './components/Employee'
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
       {/* <Login /> */}
       {/* <Signup /> */}
       <Layout>
-        <h1 style={{color: 'black'}}>Welcome to the Dashboard</h1>
+
       </Layout>
     </>
   )

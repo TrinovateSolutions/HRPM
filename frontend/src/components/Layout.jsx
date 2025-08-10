@@ -5,7 +5,6 @@ import './Layout.css';
 
 export default function Layout({ children }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import './Layout.css';
+import ts from '../assets/ts.png';
 
 export default function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -15,7 +16,8 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar-left">
-        <h2>HRMS</h2>
+        {/* <h2>HRMS</h2> */}
+        <img className="logos" src={ts} alt="Trinovate Solutions" />
       </div>
       <div className="profile-section">
         <MdOutlineAccountCircle 
@@ -24,7 +26,7 @@ export default function Navbar() {
         />
         {isDropdownOpen && (
           <div className="dropdown">
-            <button style={{color: 'black'}} onClick={logout}>Logout</button>
+            <button onClick={logout}>Logout</button>
           </div>
         )}
       </div>
