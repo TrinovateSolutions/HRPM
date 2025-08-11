@@ -1,22 +1,20 @@
 .add-employee-page {
-  max-width: 100%;
-  padding: 20px;
-  display: inline-flex;
-  align-items: center;
+  width: 95%;
+  display: flex;
 }
 
 .tab-buttons {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  justify-content: space-between;
 }
-.add-employee-container{
-    margin: 10px;
-    width: 100%;
+.add-employee-container {
+  margin: 10px;
+  width: 100%;
 }
 
 .tab-buttons button {
-  flex: 1;
-  padding: 10px;
+    width: 45%;
   border: none;
   background: #f1f1f1;
   font-weight: bold;
@@ -32,9 +30,9 @@
 .card {
   background: grey;
   border-radius: 10px;
-  width: 100%;
+  width: 96%;
   padding: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .form-grid {
@@ -53,8 +51,9 @@ label {
   font-weight: 500;
 }
 
-input, select {
-  width: 100%;
+input,
+select {
+  width: 80%;
   padding: 8px;
   margin: 10px;
   border: 1px solid #ccc;
@@ -62,6 +61,8 @@ input, select {
 }
 /* Image upload section */
 .image-upload-save {
+    margin: 10px;
+width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,6 +98,3 @@ input, select {
   text-align: center;
   padding: 10px;
 }
-
-
-
