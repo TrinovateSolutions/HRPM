@@ -7,6 +7,7 @@ import Signup from './components/Signup'
 import Layout from './components/Layout'
 import Employee from './components/Employee';
 import AddEmployee from './components/AddEmployee';
+import Subscription from './components/Subscription'
 function App() {
 
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <Login /> */}
       {/* <Signup /> */}
       {/* <Employee/> */}
-      <AddEmployee/>
+      {/* <AddEmployee/> */}
+      <Subscription />
     </>
   )
 }

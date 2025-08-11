@@ -31,6 +31,18 @@ export default function AddEmployee() {
                         >
                             Employment Details
                         </button>
+                        <button
+                            className={activeTab === "bank_info" ? "active" : ""}
+                            onClick={() => setActiveTab("bank_info")}
+                        >
+                            Bank Details
+                        </button>
+                        <button
+                            className={activeTab === "salary_breakup" ? "active" : ""}
+                            onClick={() => setActiveTab("salary_breakup")}
+                        >
+                            Salary Breakup
+                        </button>
                     </div>
 
                     {/* Card */}
@@ -112,9 +124,85 @@ export default function AddEmployee() {
                                 </div>
                             </div>
                         )}
+                        {activeTab === "bank_info" && (
+                            <div className="form-grid">
+                                <div>
+                                    <label>Bank Name</label>
+                                    <input type="text" placeholder="Enter Bank Name" required />
+                                </div>
+                                <div>
+                                    <label>Bank Account Number</label>
+                                    <input type="text" placeholder="Enter Bank Account Number" required />
+                                </div>
+                                <div>
+                                    <label>IFSC Code</label>
+                                    <input type="text" placeholder="Enter IFSC Code" required />
+                                </div>
+                                <div>
+                                    <label>Name on the Account</label>
+                                    <input type="text" placeholder="Enter Name on the Account" required />
+                                </div>
+                                <div>
+                                    <label>PF NUMBER</label>
+                                    <input type="text" placeholder="Enter PF NUMBER" required />
+                                </div>
+                                <div>
+                                    <label>UAN</label>
+                                    <input type="text" placeholder="Enter UAN" />
+                                </div>
+                                <div>
+                                    <label>PF Join Date</label>
+                                    <input type="tel" placeholder="Enter PF Join Date" required />
+                                </div>
+                                <div>
+                                    <label>PF End Date</label>
+                                    <input type="tel" placeholder="Enter PF End Date" required />
+                                </div>
+                            </div>
+                        )}
+                        {activeTab === "salary_breakup" && (
+                            <div className="form-grid">
+                                <div>
+                                    <label>Basic</label>
+                                    <input type="text" placeholder="Basic Salary" required />
+                                </div>
+                                <div>
+                                    <label>HRA</label>
+                                    <input type="text" placeholder="Enter HRA" required />
+                                </div>
+                                <div>
+                                    <label>Conveyance Allowance</label>
+                                    <input type="text" placeholder="Conveyance Allowance" required />
+                                </div>
+                                <div>
+                                    <label>Special Allowance</label>
+                                    <input type="text" placeholder="Special Allowance" required />
+                                </div>
+                                <div>
+                                    <label>Travel Reimbursement (LTA)</label>
+                                    <input type="text" placeholder="Travel Reimbursement (LTA)" required />
+                                </div>
+                                <div>
+                                    <label>Education Allowance</label>
+                                    <input type="text" placeholder="Education Allowance" />
+                                </div>
+                                <div>
+                                    <label>Telephone Reimbursement</label>
+                                    <input type="tel" placeholder="Telephone Reimbursement" required />
+                                </div>
+                                <div>
+                                    <label>PF - Employer</label>
+                                    <input type="tel" placeholder="PF - Employer" required />
+                                </div>
+                                <div>
+                                    <label>PF Employee</label>
+                                    <input type="tel" placeholder="PF Employee" required />
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
-                <div className="image-upload-save">
+                <div className="image-upload-save" style={{color: 'black'}}>
                     <div className="full-width">
                         <label>Passport Size Image *</label>
                         <input
@@ -152,8 +240,8 @@ export default function AddEmployee() {
                         )}
                     </div>
                     <div className="save-exit">
-                                    <button className="save-btn">Save</button>
-            <button className="exit-btn">Exit</button>
+                        <button className="save-btn">Save</button>
+                        <button className="exit-btn">Exit</button>
                     </div>
                 </div>
             </div>

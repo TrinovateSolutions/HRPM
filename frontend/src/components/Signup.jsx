@@ -23,6 +23,9 @@ export default function Signup() {
             <input type="repeat-password" placeholder=" Re-enter Password" />
           </div>
           <div className="form-group">
+            <input type="Role" value={"Admin"} placeholder=" Role" readOnly />
+          </div>
+          <div className="form-group">
             <button type="submit">SignUp</button>
           </div>
         </form>

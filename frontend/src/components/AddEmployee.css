@@ -7,16 +7,22 @@
   display: flex;
   margin-bottom: 10px;
   justify-content: space-between;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  padding: 2px;
 }
+
 .add-employee-container {
   margin: 10px;
   width: 100%;
 }
 
 .tab-buttons button {
-    width: 45%;
+  width: 45%;
+  color: black;
   border: none;
-  background: #f1f1f1;
+  background: #adaaaa;
+  margin: 1px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
@@ -30,9 +36,11 @@
 .card {
   background: grey;
   border-radius: 10px;
-  width: 96%;
+  width: 95%;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 63vh;
+  overflow-y: scroll;
 }
 
 .form-grid {
@@ -59,10 +67,11 @@ select {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 /* Image upload section */
 .image-upload-save {
-    margin: 10px;
-width: 30%;
+  margin: 10px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,6 +80,7 @@ width: 30%;
 .image-upload-save label {
   margin-bottom: 8px;
   font-weight: bold;
+  color: black;
 }
 
 .image-preview {
@@ -97,4 +107,10 @@ width: 30%;
   font-size: 14px;
   text-align: center;
   padding: 10px;
+}
+
+.save-exit {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
