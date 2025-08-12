@@ -3,10 +3,10 @@ import Logo from '../assets/logo.png';
 
 export default function Signup() {
   return (
-    <div className="login-page">
+    <div className="signin-page">
       <img className="logo" src={Logo} alt="Trinovate Solutions" />
 
-      <div className="login-container">
+      <div className="signin-container">
         <h1 className="main-heading">SignUp</h1>
 
         <form className="form">
@@ -18,9 +18,6 @@ export default function Signup() {
           </div>
           <div className="form-group">
             <input type="password" placeholder=" Password" />
-          </div>
-          <div className="form-group">
-            <input type="repeat-password" placeholder=" Re-enter Password" />
           </div>
           <div className="form-group">
             <input type="Role" value={"Admin"} placeholder=" Role" readOnly />

@@ -31,7 +31,7 @@
   padding: 8px 16px;
   border: none;
   background-color: #1e293b;
-  color: white;
+  color: #C8B78E;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -39,8 +39,8 @@
 .employee-add button {
   padding: 8px 16px;
   border: none;
-  background-color: red;
-  color: white;
+  background-color: #1D2233;
+  color: #C8B78E;
   border-radius: 4px;
   cursor: pointer;
 }

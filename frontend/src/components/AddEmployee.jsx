@@ -183,10 +183,6 @@ export default function AddEmployee() {
                                     <input type="text" placeholder="Travel Reimbursement (LTA)" required />
                                 </div>
                                 <div>
-                                    <label>Education Allowance</label>
-                                    <input type="text" placeholder="Education Allowance" />
-                                </div>
-                                <div>
                                     <label>Telephone Reimbursement</label>
                                     <input type="tel" placeholder="Telephone Reimbursement" required />
                                 </div>

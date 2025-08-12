@@ -1,63 +1,266 @@
 .subscription_container {
+    width: 96.5%;
+    min-height: 90%;
     display: flex;
-    justify-content: space-evenly;
-    height: 80%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #F5EBD6; /* Light beige background */
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
+/* Card Base Style */
 .subscriptions {
-    margin: 3px;
-    border-radius: 15px;
-    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    flex: 1 1 300px;
+    max-width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #D6C6A3; /* Warm sand border */
 }
 
+.subscriptions:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+.subscriptions h1 {
+    font-size: 1.5rem;
+    color: #10131F; /* Dark text */
+}
+
+/* Price Display for Paid Plans */
+.subscriptions p {
+    font-size: 1.2rem;
+    color: #1D2233; /* Deep navy for price */
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Features List */
+.subscriptions ul {
+    list-style: circle;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.subscriptions ul li {
+    padding: 8px 0;
+    font-size: 0.95rem;
+    color: #10131F;
+    border-bottom: 1px solid #F5EBD6;
+}
+
+.subscriptions ul li:last-child {
+    border-bottom: none;
+}
+
+/* Top Border Colors for Plans */
 .subscription_a {
-    background-color: green;
-    color: black;
+    border-top: 6px solid #28a745; /* Keep green for free tier */
+    background-color: #F5EBD610;
 }
 
 .subscription_b {
-    background-color: gold;
-    color: black;
+    border-top: 6px solid #1D2233; /* Deep navy for Gold */
+    background-color: #C8B78E10; /* Soft gold tint */
 }
 
 .subscription_c {
-    background-color: silver;
-    color: black;
+    border-top: 6px solid #C8B78E; /* Soft gold for Platinum */
+    background-color: #F5EBD610; /* Light beige tint */
 }
 
-.head_a {
-    border: 1px solid white;
-    border-radius: 15px;
-    background-color: white;
-    color: green;
-}
-
-.head_b {
-    border: 1px solid white;
-    border-radius: 15px;
-    background-color: white;
-    color: gold;
-    display: flex;
-    justify-content: center;
-}
-.head_b p {
-    margin-top: 18%;
-    color: black;
-}
-
+/* Align Headings and Price */
+.head_a,
+.head_b,
 .head_c {
-    border: 1px solid white;
-    border-radius: 15px;
-    background-color: white;
-    color: silver;
     display: flex;
+    flex-direction: row;
+    align-items: center; /* Vertical center */
+    gap: 10px;
     justify-content: center;
-}
-.head_c p {
-    margin-top: 18%;
-    color: black;
+    margin-right: 0;
 }
 
-li {
-    text-align: left;
+.subscriptions h1, 
+.subscriptions p {
+    margin: 0;
+}
+
+
+/* Payment link */
+.payment {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.payment_link {
+    text-decoration: none;
+    color: #1D2233;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.payment_link:hover {
+    background-color: #1D2233;
+    color: #C8B78E;
+}
+
+/* Overlay & Modal */
+.modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.modal_content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    width: 40%;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.modal_content h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Plan Options */
+.plan_option {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plan_option input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.plan_option span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.plan_option strong {
+    color: #2b8a3e;
+    margin-left: 5px;
+}
+
+.old_price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 12px;
+}
+
+.new_price {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Summary Box */
+.summary_box {
+    background: #f7f7f7;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.summary_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.summary_row.total {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.summary_row.coupon a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+/* Terms */
+.terms_text {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.terms_text a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.renew_text {
+    font-size: 12px;
+    color: #d9534f;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.modal_buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.pay_btn {
+    background-color: #2b8a3e;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.pay_btn:hover {
+    background-color: #237331;
+}
+
+.close_btn {
+    background-color: #ccc;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.close_btn:hover {
+    background-color: #aaa;
 }
