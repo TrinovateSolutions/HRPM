@@ -18,3 +18,30 @@ Font for logo -Libre Bodoni /Playfair Display
 Colours for branding - #F5EBD6,#D6C6A3,#10131F,#1D2233,#C8B78E
 
 #3c4353 
+
+
+<div className="plan_option">
+                <label>
+                    <input type="radio" name="plan" defaultChecked />
+                    <span>1 year<strong>SAVE 67%</strong></span>
+                    <span className="old_price">₹ 699.00</span>
+                    <span className="new_price">₹ 229.00/mo</span>
+                </label>
+            </div>
+
+            <div className="plan_option">
+                <label>
+                    <input type="radio" name="plan" />
+                    <span>6 months <strong>SAVE 46%</strong></span>
+                    <span className="old_price">₹ 699.00</span>
+                    <span className="new_price">₹ 379.00/mo</span>
+                </label>
+            </div>
+
+            <div className="plan_option">
+                <label>
+                    <input type="radio" name="plan" />
+                    <span>1 month</span>
+                    <span className="new_price">₹ 699.00/mo</span>
+                </label>
+            </div>

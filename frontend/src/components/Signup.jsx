@@ -11,16 +11,13 @@ export default function Signup() {
 
         <form className="form">
           <div className="form-group">
-            <input type="text" placeholder=" Email" />
+            <input type="text" placeholder="Email" />
           </div>
           <div className="form-group">
-            <input type="text" placeholder=" Phone number" />
+            <input type="text" placeholder="Phone number" />
           </div>
           <div className="form-group">
-            <input type="password" placeholder=" Password" />
-          </div>
-          <div className="form-group">
-            <input type="Role" value={"Admin"} placeholder=" Role" readOnly />
+            <input type="password" placeholder="Password" />
           </div>
           <div className="form-group">
             <button type="submit">SignUp</button>

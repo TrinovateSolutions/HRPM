@@ -165,7 +165,6 @@ export default function Subscription() {
                             you have read our <a href="#">Privacy Policy</a>. You can cancel recurring payments
                             at any time.
                         </p>
-                        <p className="renew_text">Renews at ₹ 649.00/mo for 1 year</p>
 
                         <div className="modal_buttons">
                             <button className="pay_btn">Choose payment method</button>

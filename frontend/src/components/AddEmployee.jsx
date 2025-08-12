@@ -104,15 +104,20 @@ export default function AddEmployee() {
                                 </div>
                                 <div>
                                     <label>Salary *</label>
-                                    <input type="number" placeholder="Enter salary" />
+                                    <input type="text" placeholder="Enter salary" />
                                 </div>
                                 <div>
                                     <label>Work Location</label>
                                     <input type="text" placeholder="Enter location" />
                                 </div>
                                 <div>
-                                    <label>Manager Name</label>
-                                    <input type="text" placeholder="Enter manager" />
+                                    <label>Employee Type</label>
+                                    <select>
+                                        <option>Admin</option>
+                                        <option>Hr</option>
+                                        <option>Finance</option>
+                                        <option>Normal user</option>
+                                    </select>
                                 </div>
                                 <div>
                                     <label>Employment Type</label>
@@ -198,7 +203,7 @@ export default function AddEmployee() {
                         )}
                     </div>
                 </div>
-                <div className="image-upload-save" style={{color: 'black'}}>
+                <div className="image-upload-save" style={{ color: 'black' }}>
                     <div className="full-width">
                         <label>Passport Size Image *</label>
                         <input

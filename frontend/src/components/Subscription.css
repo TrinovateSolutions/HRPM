@@ -143,7 +143,22 @@
 .modal_content h2 {
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 15px;
+margin-bottom: 15px;
+}
+.tier-tab{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+} 
+.tier-tab button{
+    color: #1D2233;
+    background-color: #ffffff;
+    width: 50%;
+    border: 1px solid #000;
+}
+.tier-tab button.active{
+        color: #D6C6A3;
+    background-color: #1D2233;
 }
 
 /* Plan Options */
@@ -222,11 +237,6 @@
     text-decoration: none;
 }
 
-.renew_text {
-    font-size: 12px;
-    color: #d9534f;
-    margin-bottom: 15px;
-}
 
 /* Buttons */
 .modal_buttons {
@@ -236,10 +246,10 @@
 }
 
 .pay_btn {
-    background-color: #2b8a3e;
-    color: #fff;
+    background-color: #D6C6A3;
+    color: #1D2233;
     padding: 10px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 14px;
     cursor: pointer;
@@ -247,14 +257,15 @@
 }
 
 .pay_btn:hover {
-    background-color: #237331;
+    background-color: #1D2233;
+    color: #C8B78E;
 }
 
 .close_btn {
     background-color: #ccc;
     color: #000;
     padding: 10px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 14px;
     cursor: pointer;

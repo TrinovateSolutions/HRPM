@@ -8,6 +8,7 @@ import Layout from './components/Layout'
 import Employee from './components/Employee';
 import AddEmployee from './components/AddEmployee';
 import Subscription from './components/Subscription'
+import Otp from './components/Otp'
 function App() {
 
   return (
@@ -16,7 +17,8 @@ function App() {
       {/* <Signup /> */}
       {/* <Employee/> */}
       {/* <AddEmployee/> */}
-      <Subscription />
+      {/* <Subscription /> */}
+      <Otp/>
     </>
   )
 }
