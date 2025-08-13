@@ -9,16 +9,20 @@ import Employee from './components/Employee';
 import AddEmployee from './components/AddEmployee';
 import Subscription from './components/Subscription'
 import Otp from './components/Otp'
+import Domain from './components/domain'
+import Dashboard from './components/Dashboard'
 function App() {
 
   return (
     <>
       {/* <Login /> */}
       {/* <Signup /> */}
+      {/* <Otp/> */}
+      {/* <Domain/> */}
       {/* <Employee/> */}
       {/* <AddEmployee/> */}
       {/* <Subscription /> */}
-      <Otp/>
+      <Dashboard/>
     </>
   )
 }
