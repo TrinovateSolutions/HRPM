@@ -9,8 +9,9 @@ import Employee from './components/Employee';
 import AddEmployee from './components/AddEmployee';
 import Subscription from './components/Subscription'
 import Otp from './components/Otp'
-import Domain from './components/domain'
-import Dashboard from './components/Dashboard'
+import Domain from './components/Domain'
+// import Dashboard from './components/Dashboard'
+import Payroll from './components/Payroll'
 function App() {
 
   return (
@@ -19,10 +20,11 @@ function App() {
       {/* <Signup /> */}
       {/* <Otp/> */}
       {/* <Domain/> */}
-      {/* <Employee/> */}
+      <Employee/>
       {/* <AddEmployee/> */}
       {/* <Subscription /> */}
-      <Dashboard/>
+      {/* <Dashboard/> */}
+      {/* <Payroll /> */}
     </>
   )
 }

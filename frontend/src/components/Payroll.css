@@ -1,0 +1,56 @@
+.payroll-heading {
+    color: #1e293b;
+    width: 100%;
+    border-radius: 15px;
+    font-size: xx-large;
+}
+
+.payroll-card {
+    background-color: #1e293b;
+    /* dark slate */
+    border: 2px solid #C8B78E;
+    /* gold */
+    border-radius: 16px;
+    padding: 20px 40px 20px 40px;
+    /* width: 350px; */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: #F5EBD6;
+}
+
+.payroll-lastday {
+    text-align: left;
+}
+
+.payroll-curr-month {
+    font-size: x-large;
+    max-width: max-content;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse; /* removes double borders */
+  margin-top: 80px;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid #ccc; /* light gray border */
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.employee-table th {
+  background-color: #f4f4f4; /* light header background */
+  font-weight: bold;
+}
+
+.employee-table tr:nth-child(even) {
+  background-color: #fafafa; /* zebra striping */
+}
+
+.employee-table tr:hover {
+  background-color: #f1f7ff; /* light blue hover */
+}

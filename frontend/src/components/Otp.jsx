@@ -15,7 +15,7 @@ export default function Otp() {
         <div className="otp-page">
             <img className="logo" src={Logo} alt="Trinovate Solutions" />
             <div className="otp-card">
-                <h2 className="otp-head">Enter OTP's for registered Email and Mobile Number</h2>
+                <h2 className="otp-head">Enter OTPs for registered Email and Mobile Number</h2>
                 {/* Mobile OTP */}
                 <div className="otp-input">
                     <label>Email OTP:</label>
@@ -38,7 +38,7 @@ export default function Otp() {
                 </div>
                 <button className="otp-button"
                 onClick={verifyOtps}>
-                Verify OTP's
+                Verify OTPs
             </button>
             </div>
         </div>

@@ -22,6 +22,9 @@ export default function Employee() {
 
   return (
     <Layout>
+      <div className="employee-heading">
+        Employee Management
+      </div>
       <div className="employee-page">
         <div className="employee-header">
           <div className="employee-search">
@@ -40,20 +43,21 @@ export default function Employee() {
           </div>
         </div>
 
-        <table className="employee-table">
-          <thead>
-            <tr>
-              <th>S.No</th>
-              <th>ID</th>
-              <th>Name</th>
-              <th>Designation</th>
-              <th>Phone</th>
-              <th>Email</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {filteredEmployees.length > 0 ? (
+        <div className="table-container">
+          <table className="employee-table">
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredEmployees.length > 0 ? (
               filteredEmployees.map((emp, index) => (
                 <tr key={emp.id}>
                   <td>{index + 1}</td>
@@ -73,8 +77,9 @@ export default function Employee() {
                 <td colSpan="7">No employees found</td>
               </tr>
             )}
-          </tbody>
-        </table>
+            </tbody>
+          </table>
+        </div>
       </div>
     </Layout>
   );

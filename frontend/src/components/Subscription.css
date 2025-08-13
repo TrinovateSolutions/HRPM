@@ -116,34 +116,39 @@
 }
 
 /* Overlay & Modal */
+/* Overlay always above everything */
 .modal_overlay {
-    position: fixed;
+    position: fixed !important; /* Avoid parent stacking context issues */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    z-index: 99999; /* Max priority */
 }
 
+/* Modal content above the overlay */
 .modal_content {
+    position: relative;
     background: #fff;
     padding: 25px;
     border-radius: 10px;
     width: 40%;
+    max-height: 90vh;
     overflow-y: auto;
     font-family: Arial, sans-serif;
     box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
-    z-index: 999;
+    z-index: 100000; /* Above overlay */
 }
 
 .modal_content h2 {
     font-size: 18px;
     font-weight: 600;
-margin-bottom: 15px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 .tier-tab{
     display: flex;
@@ -176,6 +181,7 @@ margin-bottom: 15px;
 .plan_option input[type="radio"] {
     margin-right: 10px;
     transform: scale(1.2);
+    width: auto;
 }
 
 .plan_option span {
@@ -274,4 +280,20 @@ margin-bottom: 15px;
 
 .close_btn:hover {
     background-color: #aaa;
+}
+
+.summary_row .coupon input {
+    width: 100px;
+}
+
+.coupon span {
+    margin: auto 0 auto 0;
+}
+
+.coupon_verify {
+    display: flex;
+}
+
+.coupon_verify a {
+    margin: auto;
 }
