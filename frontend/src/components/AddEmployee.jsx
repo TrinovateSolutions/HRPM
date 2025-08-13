@@ -203,8 +203,8 @@ export default function AddEmployee() {
                         )}
                     </div>
                 </div>
-                <div className="image-upload-save" style={{ color: 'black' }}>
-                    <div className="full-width">
+                <div className="image-upload-save" style={{ color: 'white' }}>
+                    <div className="full-width" >
                         <label>Passport Size Image *</label>
                         <input
                             type="file"

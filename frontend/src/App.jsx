@@ -20,8 +20,8 @@ function App() {
       {/* <Signup /> */}
       {/* <Otp/> */}
       {/* <Domain/> */}
-      <Employee/>
-      {/* <AddEmployee/> */}
+      {/* <Employee/> */}
+      <AddEmployee/>
       {/* <Subscription /> */}
       {/* <Dashboard/> */}
       {/* <Payroll /> */}
