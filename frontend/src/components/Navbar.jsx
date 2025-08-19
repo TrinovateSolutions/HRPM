@@ -26,6 +26,7 @@ export default function Navbar() {
         />
         {isDropdownOpen && (
           <div className="dropdown">
+            <button onClick={logout}>Change Password</button>
             <button onClick={logout}>Logout</button>
           </div>
         )}

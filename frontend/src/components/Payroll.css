@@ -30,7 +30,6 @@
 .employee-table {
   width: 100%;
   border-collapse: collapse; /* removes double borders */
-  margin-top: 80px;
   font-size: 14px;
   color: #1e293b;
 }

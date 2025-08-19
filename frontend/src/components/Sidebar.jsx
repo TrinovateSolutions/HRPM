@@ -41,11 +41,11 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                 isOpen? "Subscription": <RiExchangeDollarLine size={25}/>
             }
         </li>
-        <li title="Settings">
+        {/* <li title="Settings">
             {
                 isOpen? "Settings": <MdOutlineSettings size={25}/>
             }
-        </li>
+        </li> */}
       </ul>
     </div>
   );

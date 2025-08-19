@@ -21,10 +21,10 @@ function App() {
       {/* <Otp/> */}
       {/* <Domain/> */}
       {/* <Employee/> */}
-      <AddEmployee/>
+      {/* <AddEmployee/> */}
       {/* <Subscription /> */}
       {/* <Dashboard/> */}
-      {/* <Payroll /> */}
+      <Payroll />
     </>
   )
 }

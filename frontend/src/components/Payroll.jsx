@@ -50,9 +50,6 @@ export default function Payroll() {
                     <div style={{ textAlign: "left", marginTop: "20px" }}>
                         Total Employees: {300}
                     </div>
-                    <div style={{ textAlign: "right" }}>
-                        <button style={{ color: "#F5EBD6" }}>Generate Payroll</button>
-                    </div>
                     <div style={{ textAlign: "left" }}>
                         Current Employees: {300}
                     </div>
@@ -69,6 +66,9 @@ export default function Payroll() {
             >
                 <button style={{ color: "#F5EBD6" }}>View Previous Payroll</button>
                 <button style={{ color: "#F5EBD6" }}>Generate Reports</button>
+            </div>
+            <div style={{ textAlign: "right", marginTop: "80px", marginBottom: "10px" }}>
+                <button style={{ color: "#F5EBD6" }}>Generate Payroll</button>
             </div>
             <table className="employee-table">
                 <thead>
@@ -94,7 +94,7 @@ export default function Payroll() {
                                 <td>{emp.email}</td>
                                 <td>
                                     <button>Edit</button>
-                                    <button>Delete</button>
+                                    <button>Skip</button>
                                 </td>
                             </tr>
                         ))
