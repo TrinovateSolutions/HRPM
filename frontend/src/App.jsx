@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -15,17 +16,17 @@ import Payroll from './components/Payroll'
 function App() {
 
   return (
-    <>
-      {/* <Login /> */}
-      {/* <Signup /> */}
-      {/* <Otp/> */}
-      {/* <Domain/> */}
-      {/* <Employee/> */}
-      {/* <AddEmployee/> */}
-      {/* <Subscription /> */}
-      {/* <Dashboard/> */}
-      <Payroll />
-    </>
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/otp" element={<Otp />} />
+      <Route path="/domain" element={<Domain />} />
+      <Route path="/employee" element={<Employee />} />
+      <Route path="/add-employee" element={<AddEmployee />} />
+      <Route path="/subscription" element={<Subscription />} />
+      <Route path="/dashboard" element={/* <Dashboard /> */ null} />
+      <Route path="/payroll" element={<Payroll />} />
+    </Routes>
   )
 }
 
